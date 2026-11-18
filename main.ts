@@ -29,4 +29,4 @@ if (characters < 1 || characters > 1000) {
 }
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), PLAN);
-console.log('entry.txt written: ' + characters + ' characters');
+console.log('entry.txt written: ' + characters + ' characters, ' + Buffer.byteLength(PLAN) + ' UTF-8 bytes');
